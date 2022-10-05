@@ -31,6 +31,7 @@ header{
         width: 60px;
         vertical-align: middle;  /* centra dentro de una celda al medio  */
         margin-right: 16px; /*pensar las separaciones,para separar la imagen de la palabra   */
+        border-radius: 30px;
     }
     header a {
         color: #707070;
@@ -56,6 +57,7 @@ header{
         width: 300px;
         height: 300px;
         border-radius: 12px;
+        
     }
 
     .inicio div {
@@ -277,12 +279,13 @@ footer {
         font-weight: 600;
     }
     #logo-footer img{
-        width: 32px;
+        width: 40px;
         margin-right: 8px;
         vertical-align: middle;
+        border-radius: 30px;
     }
 
     footer div a img{
-        width: 16px;
+        width: 24px;
         margin-left: 8px;
     }
