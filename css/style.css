@@ -180,10 +180,11 @@ main{
     #asociate {
         background-image: url(../img/forms.jpg);
         background-size: cover;
+        padding: 60px 0px;
     }
-
+    
     #formulario {
-        background-color: rgba(255, 255, 255, 0.576);
+        background-color: rgba(255, 255, 255, 0.177);
         width: 1000px;
         margin: auto;
         padding: 60px;
@@ -191,11 +192,11 @@ main{
         border-radius: 12px;
         justify-content: space-between;
     }
-
     #formulario form{
         width: 550px;
     }
-    #asociate div{
+
+    #formulario div{
         width: 250px;
         background-color: #F4F4F4;
         display: flex;
@@ -206,11 +207,82 @@ main{
         border: #F4F4F4 solid;
     }
 
-    #asociate div img{
+    
+
+
+    #formulario input, 
+    #formulario button, 
+    #formulario textarea{
+    width: 100%;
+    border-radius: 12px;
+    border:none;
+    padding: 16px; /* esto da la altura de los input , el centrado y la separacion */
+    font-family: Raleway;
+    color:black;
+    font-weight: 600;
+    }
+  
+    #formulario input,
+    #formulario textarea {
+        background-color: #F4F4F4 ;
+        margin-bottom: 16px;
+        border: #F4F4F4 solid;
+    }
+
+
+
+    #formulario button{
+        background-color: #D7C0AE;
+        color: black;
+        transition: .3s;
+        padding: 10px;
+    }
+     
+    #formulario button:hover{
+        background-color:#444444;
+    }
+    
+    #formulario textarea{
+        height: 100px;
+        
+        resize: none; /* saca la posibilidad de agrandar*/
+    }
+
+    
+    #formulario div img {
         width: 72px;
         height: 72px;
         border: 1px solid #707070;
         border-radius: 36px;
         padding: 8px ;
         margin-top: 8px;
+    }
+/*footer*/
+footer {
+    background-color: #262626;
+    
+   
+}
+    #contenidofooter{
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        width: 1100PX;
+        align-items: center;
+        height: 150px;
+    }
+
+    #contenidofooter a{
+        color: white;
+        font-weight: 600;
+    }
+    #logo-footer img{
+        width: 32px;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+
+    footer div a img{
+        width: 16px;
+        margin-left: 8px;
     }
