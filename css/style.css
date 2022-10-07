@@ -19,7 +19,15 @@ a{
 }
 
 @media (min-width: 1000px) {
-
+    body{
+        font-family:  'Raleway', sans-serif;
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    a{
+        text-decoration: none;
+    }
 
 header{
     display: flex;
@@ -297,7 +305,7 @@ footer {
     }
 
 /*medida small para tablet*/
-@media ( min-width: 600px ){
+@media ( min-width: 600px ) and (max-width:999px) {
     body{ 
         font-size: 12px;
     }
@@ -406,7 +414,7 @@ footer {
     #menu{
         height: 300px;
     }
-/*cuarta pagina*/
+ /*cuarta pagina*/
     #reglas {
         background: #D9D9D9;
         padding: 100px;
@@ -462,85 +470,144 @@ footer {
         height: 50px;
     }
 /*quinta pagina*/
-#asociate {
-    background-image: url(../img/forms.jpg);
-    background-size: cover;
-    padding: 60px 0px;
-}
+    #asociate {
+        background-image: url(../img/forms.jpg);
+        background-size: cover;
+        padding: 60px 0px;
+    }
 
-#formulario {
-    background-color: rgba(255, 255, 255, 0.177);
-    width: 550px;
-    margin: auto;
-    padding: 10px;
-    display: flex;
+    #formulario {
+        background-color: rgba(255, 255, 255, 0.177);
+        width: 550px;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        border-radius: 12px;
+        justify-content: space-between;
+    }
+    #formulario form{
+        width: 450px;
+    }
+
+    #formulario div{
+        width: 180px;
+        height: 250px;
+        background-color: #F4F4F4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2; /* multiplica el espacio de las lineas x2*/
+        border-radius: 12px;
+        border: #F4F4F4 solid;
+    }
+
+
+    #formulario input, 
+    #formulario button, 
+    #formulario textarea{
+    width: 80%;
     border-radius: 12px;
-    justify-content: space-between;
-}
-#formulario form{
-    width: 450px;
-}
+    border:none;
+    padding: 16px; /* esto da la altura de los input , el centrado y la separacion */
+    font-family: Raleway;
+    color:black;
+    font-weight: 600;
+    }
 
-#formulario div{
-    width: 180px;
-    height: 250px;
-    background-color: #F4F4F4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 2; /* multiplica el espacio de las lineas x2*/
-    border-radius: 12px;
-    border: #F4F4F4 solid;
-}
+    #formulario input,
+    #formulario textarea {
+        background-color: #F4F4F4 ;
+        margin-bottom: 16px;
+        border: #F4F4F4 solid;
+    }
 
-
-#formulario input, 
-#formulario button, 
-#formulario textarea{
-width: 80%;
-border-radius: 12px;
-border:none;
-padding: 16px; /* esto da la altura de los input , el centrado y la separacion */
-font-family: Raleway;
-color:black;
-font-weight: 600;
-}
-
-#formulario input,
-#formulario textarea {
-    background-color: #F4F4F4 ;
-    margin-bottom: 16px;
-    border: #F4F4F4 solid;
-}
-
-
-
-#formulario button{
-    background-color: #D7C0AE;
-    color: black;
-    transition: .3s;
-    padding: 10px;
-}
- 
-#formulario button:hover{
-    background-color:#444444;
-}
-
-#formulario textarea{
-    height: 100px;
+    #formulario button{
+        background-color: #D7C0AE;
+        color: black;
+        transition: .3s;
+        padding: 10px;
+    }
     
-    resize: none; /* saca la posibilidad de agrandar*/
+    #formulario button:hover{
+        background-color:#444444;
+    }
+
+    #formulario textarea{
+        height: 100px;
+        
+        resize: none; /* saca la posibilidad de agrandar*/
+    }
+
+
+    #formulario div img {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #707070;
+        border-radius: 36px;
+        padding: 8px ;
+        margin-top: 8px;
+    }
+
 }
 
+/*medida extra small para celular*/
+@media ( min-width:400px ) and (max-width:599px){
+    body{ 
+        font-size: 8px;
+    }
+    header{
+        display: flex;
+        justify-content:space-between ;
+        align-items:center ; /*centra en un contenedor*/
+        height: 45px;
+        margin: auto;
+        padding: 8px;
+        background-color: #B7C4CF;
+    }
+        header a img {
+            width: 20px;
+            vertical-align: middle;  /* centra dentro de una celda al medio  */
+            margin-right: 8px; /*pensar las separaciones,para separar la imagen de la palabra   */
+            border-radius: 30px;
+        }
+        header a {
+            color: #707070;
+            font-weight: 600; /*para el titulo */
+        }
+    
+        header nav a {
+            /*separacion para las palabras se puede usar padding o margin left*/
+            margin-left: 24px;
+            padding: 8px; /* agranda el area de clic y mejora la experiencia*/
+            
+        }
+/*primer pagina*/
 
-#formulario div img {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #707070;
-    border-radius: 36px;
-    padding: 8px ;
-    margin-top: 8px;
+.inicio {
+    background-color: #EEE3CB;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 36px 36px 36px 36px;
 }
+    .inicio img{
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+        
+    }
+
+    .inicio div {
+        width: 290px;
+        background-color: #D9D9D9;
+        padding: 16px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .inicio p {
+        margin-top: 8px;
+    }
 
 }
-

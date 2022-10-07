@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/jpg" href="img/logo.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- iframe animacion -->
+    
     <title>CAt Coffee</title>
 </head>
 <body>
@@ -111,7 +115,7 @@
             <article id="titulo">
                 <img src="img/logo.png" alt="logo">
                 <div>
-                    <h2> Reglas</h2>
+                    <h2 class= "animate__animated animate__backInDown" > Reglas</h2> <!-- animacion -->
                     <p>Para que tu estadia sea la mejor te dejamos unas reglas :                </p>
                 </div>    
             </article>
@@ -145,16 +149,16 @@
         <!-- quinta pagina -->
         <section id="asociate">
             <section id="formulario">
-                <form action="">
-                    <input type="text" placeholder="Nombre:">
+                <form action="https://formspree.io/f/xknebdbd" method="post">
+                    <input type="text" placeholder="Nombre:" >
                     
                     <input type="text" placeholder="Apellido:">
 
-                    <input type="email" placeholder="Email:">
+                    <input type="email" placeholder="Email:" id="email">
                     
-                    <textarea name="" placeholder="Consulta:"></textarea>
+                    <textarea name="message" placeholder="Consulta:"></textarea>
     
-                    <button>Enviar</button>
+                    <button type="submit">Enviar</button>
                 </form>
     
                 <div>
