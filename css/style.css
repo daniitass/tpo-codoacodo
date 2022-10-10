@@ -82,9 +82,7 @@ header{
     .inicio p {
         margin-top: 8px;
     }
-main{
-    
-}
+
 /*segunda pagina*/
     #ellos{
         display: flex;
@@ -452,9 +450,50 @@ footer {
         font-weight: 200;
     }
  /* tercer pagina*/
-    #menu{
-        height: 300px;
-    }
+ #menu{
+    background-image: url(../img/fondoMenu.jpg);
+    background-size: cover;   
+    padding: 20px 20px;     
+}
+#menu h2{
+    background: #d9d9d9;
+    font-size: 36px;
+    width: 100%;       
+    margin-bottom: 16px;
+    border-radius: 12px;        
+    display: flex;
+    justify-content: center;
+}
+#subMenu h4{
+    background: #d9d9d9;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;        
+    margin-bottom: 16px;
+    border-radius: 12px;        
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+#subMenu p{
+    font-size: 20px;
+    width: 400px;
+    height: 50px;                     
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+#subMenu{
+    background-color: rgba(255, 255, 255, 0.576);
+    width: 500px;
+    margin: auto;
+    padding: 60px;
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-between;  
+    display: grid;
+    text-align: center;
+    justify-content: center;     
+}
  /*cuarta pagina*/
     #reglas {
         background: #D9D9D9;
@@ -594,21 +633,21 @@ footer {
 /*medida extra small para celular*/
 @media ( min-width:400px ) and (max-width:599px){
     body{ 
-        font-size: 8px;
+        font-size: 10px;
     }
     header{
         display: flex;
-        justify-content:space-between ;
+        justify-content:space-around ;
         align-items:center ; /*centra en un contenedor*/
-        height: 45px;
+        height: 50px;
         margin: auto;
-        padding: 8px;
+        padding: 10px;
         background-color: #B7C4CF;
     }
         header a img {
-            width: 20px;
+            width: 30px;
             vertical-align: middle;  /* centra dentro de una celda al medio  */
-            margin-right: 8px; /*pensar las separaciones,para separar la imagen de la palabra   */
+            margin-right: 10px; /*pensar las separaciones,para separar la imagen de la palabra   */
             border-radius: 30px;
         }
         header a {
@@ -618,7 +657,7 @@ footer {
     
         header nav a {
             /*separacion para las palabras se puede usar padding o margin left*/
-            margin-left: 24px;
+            
             padding: 8px; /* agranda el area de clic y mejora la experiencia*/
             
         }
@@ -650,5 +689,229 @@ footer {
     .inicio p {
         margin-top: 8px;
     }
+/*segunda pagina*/
+    #ellos{
+        display: flex;
+        flex-wrap: wrap;  /*esto hace q me respete el ancho del contenedor*/
+        justify-content:space-between ;
+        background: #D7C0AE;
+        padding: 32px;
+        
+    }
+    #ellos h2{
+        background: #d9d9d9;
+        width: 100%;
+        margin-bottom: 16px;;
+        border-radius: 12px;
+        padding: 8px;
 
+    }
+   
+    #ellos img{
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+    }
+    #ellos article {
+        width:150px ;
+        height: 200px;
+        background-color: #D9D9D9;
+        color:black ;
+        text-align:center;
+        padding: 8px;
+        margin: 8px;
+          
+    }
+     #ellos h3 {
+        font-weight: 400 ;
+        margin: 8px 8px;
+        font-size: 30px;
+     }
+    
+     #ellos p {
+        font-weight: 200 ;
+        margin: 8px 8px;
+        
+    }
+/* tercer pagina*/
+    #menu{
+        background-image: url(../img/fondoMenu.jpg);
+        background-size: cover;   
+        padding: 20px 20px;     
+    }
+    #menu h2{
+        background: #D9D9D9;
+        font-size: 16px;
+        width: 95%;       
+        margin-bottom: 16px;
+        border-radius: 12px;        
+        display: flex;
+        justify-content: center;
+    }
+    #subMenu h4{
+        background: #D9D9D9;
+        font-size: 16px;
+        padding: 10px 10px 10px 10px;        
+        margin-bottom: 16px;
+        border-radius: 12px;        
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+    #subMenu p{
+        font-size: 16px;
+        width: 300px;
+        height: 50px;                     
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+    #subMenu{
+        background-color: rgba(255, 255, 255, 0.576);
+        width: 300px;
+        margin: auto;
+        padding: 40px;
+        display: flex;
+        border-radius: 12px;
+        justify-content: space-between;  
+        display: grid;
+        text-align: center;
+        justify-content: center;     
+    }
+/*cuarta pagina*/
+    #reglas {
+        background: #D9D9D9;
+        padding: 80px;
+    }
+
+    #titulo {
+        background: #D7C0AE;
+        width: 250px;
+        border-radius: 12px;
+            
+    }
+
+    #titulo img{
+        width: 150px;
+        height: 130px;
+        position: relative;
+        bottom: 50px;
+        right: 50px;
+        border-radius: 12px;
+    }
+
+    #titulo div{
+        text-align: center;
+        padding: 8px;
+    
+    }
+
+    #titulo div h2 {
+        font-size: 30px;
+        margin-bottom: 8px;
+    
+    }
+    #titulo p {
+        font-size: 16px;
+    }
+
+    .lasreglas{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* para respetar el tamaño del contido que se envuelve */
+        font-size: 18px;    
+    
+    }
+
+    .lasreglas article {
+        background-color: #D7C0AE ;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .lasreglas img {
+        width: 30px;
+        height: 30px;
+    }
+/*quinta pagina*/
+    #asociate {
+        background-image: url(../img/forms.jpg);
+        background-size: cover;
+        padding: 60px 0px;
+    }
+
+    #formulario {
+        background-color: rgba(255, 255, 255, 0.177);
+        width: 390px;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        border-radius: 12px;
+        justify-content: space-between;
+    }
+    #formulario form{
+        width: 370px;
+    }
+
+    #formulario div{
+        width: 150px;
+        height: 180px;
+        background-color: #F4F4F4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2; /* multiplica el espacio de las lineas x2*/
+        border-radius: 12px;
+        border: #F4F4F4 solid;
+    }
+
+
+    #formulario input, 
+    #formulario button, 
+    #formulario textarea{
+    width: 70%;
+    border-radius: 12px;
+    border:none;
+    padding: 16px; /* esto da la altura de los input , el centrado y la separacion */
+    font-family: Raleway;
+    color:black;
+    font-weight: 600;
+    }
+
+    #formulario input,
+    #formulario textarea {
+        background-color: #F4F4F4 ;
+        margin-bottom: 8px;
+        border: #F4F4F4 solid;
+    }
+
+    #formulario button{
+        background-color: #D7C0AE;
+        color: black;
+        transition: .3s;
+        padding: 8px;
+    }
+    
+    #formulario button:hover{
+        background-color:#444444;
+    }
+
+    #formulario textarea{
+        height: 100px;
+        
+        resize: none; /* saca la posibilidad de agrandar*/
+    }
+
+
+    #formulario div img {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #707070;
+        border-radius: 36px;
+        padding: 6px ;
+        margin-top: 6px;
+    }
 }
