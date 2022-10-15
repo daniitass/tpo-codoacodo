@@ -236,7 +236,7 @@ header{
     }
     
     #formulario {
-        background-color: rgba(255, 255, 255, 0.177);
+        background-color: rgba(255, 255, 255, 0.362);;
         width: 1000px;
         margin: auto;
         padding: 60px;
@@ -258,7 +258,14 @@ header{
         border-radius: 12px;
         border: #F4F4F4 solid;
     }
-
+    #asociate span {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        height: 8px;
+        color: #d12828;
+        margin-bottom: 12px;
+    }
     
     #formulario input, 
     #formulario button, 
@@ -557,7 +564,7 @@ footer {
     }
 
     #formulario {
-        background-color: rgba(255, 255, 255, 0.177);
+        background-color: rgba(255, 255, 255, 0.362);
         width: 550px;
         margin: auto;
         padding: 10px;
@@ -628,6 +635,14 @@ footer {
         margin-top: 8px;
     }
 
+    #asociate span {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        height: 8px;
+        color: #d12828;
+        margin-bottom: 12px;
+    }
 }
 
 /*medida extra small para celular*/
@@ -844,7 +859,7 @@ footer {
     }
 
     #formulario {
-        background-color: rgba(255, 255, 255, 0.177);
+        background-color: rgba(255, 255, 255, 0.362);
         width: 390px;
         margin: auto;
         padding: 10px;
@@ -868,6 +883,14 @@ footer {
         border: #F4F4F4 solid;
     }
 
+    #asociate span {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        height: 8px;
+        color: #d12828;
+        margin-bottom: 12px;
+    }
 
     #formulario input, 
     #formulario button, 

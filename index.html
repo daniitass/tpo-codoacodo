@@ -168,14 +168,18 @@
         <section id="asociate">
             <section id="formulario">
                 <form action="https://formspree.io/f/xknebdbd" method="post">
-                    <input type="text" placeholder="Nombre:" >
-                    
-                    <input type="text" placeholder="Apellido:">
+                    <input type="text" placeholder="Nombre:" name="nombre" >
+                    <span id="txtNombre"></span>
 
-                    <input type="email" placeholder="Email:" id="email">
-                    
+                    <input type="text" placeholder="Apellido:" name="apellido">
+                    <span id="txtApellido"></span>
+
+                    <input type="email" placeholder="Email:" id="email" name="email">
+                    <span id="txtEmail"></span>
+
                     <textarea name="message" placeholder="Consulta:"></textarea>
-    
+                    <span id="txtComentarios"></span>
+                    
                     <button type="submit">Enviar</button>
                 </form>
     
@@ -212,6 +216,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/formulario.js"></script>
 </body>
 </html>
