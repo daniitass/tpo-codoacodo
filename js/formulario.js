@@ -16,13 +16,11 @@ const txtApellido =document.querySelector('#txtApellido');
 formulario.addEventListener(
     'submit', //para formulario el evento no es click
     function (evento)
-    {
-
-        evento.preventDefault(); //evitamos el envio
-        
+    {        
         borrarMensajes();
 
         let check = true ;
+
         //validamos el dato en el campo nombre
         let datoNombre = nombre.value ;
         if (checkVacio(datoNombre)){
@@ -30,10 +28,11 @@ formulario.addEventListener(
             txtNombre.innerText = 'Complete el campo nombre'
         }
         //validamos el dato en el campo apellido
+        
         let datoApellido = apellido.value ;
         if (checkVacio(datoApellido)){
             check = false ;
-            txtApellido.innerText = 'Complete el campo nombre'
+            txtApellido.innerText = 'Complete el campo apellido'
         }
 
        //validamos el dato email 
@@ -54,14 +53,16 @@ formulario.addEventListener(
         //es que paso las pruebas
         //enviamos el form
 
-        if (check){
-            formulario.submit () ;
+        if (!check){
+            evento.preventDefault(); //evitamos el envio
+            
         }
 
     }
 
     
 );
+
 function checkVacio (dato)
 {
     if (dato.length == 0 || dato == null ){ // dato=' ' tbn para vacio
@@ -80,4 +81,5 @@ function borrarMensajes()
     txtNombre.innerText = '';
     txtEmail.innerText = '' ;
     txtComentarios.innerText = '';
+    txtApellido.innerText = '' ;
 }
