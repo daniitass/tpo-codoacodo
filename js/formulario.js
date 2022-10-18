@@ -72,7 +72,7 @@ function checkVacio (dato)
 }
 
 function validarEmail (email) {
-    let exp = /\S+@\S+\.\S+/; //expresion regular 
+    let exp = /\S+@\S+\.\S+/; //expresion regular // nombre \S @ hotmail \S . com \S
     return exp.test(email);
 }
 
