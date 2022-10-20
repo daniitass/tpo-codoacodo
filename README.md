@@ -1,5 +1,5 @@
 # Tpo-codoacodo
-Proyecto realizado para el curso de FullStack del programa Codo a Codo. Creamos una pagina web llamada Cat Caffee. Utilizamos la appi https://formspree.io/ para el envio del forms donde llega a un mail nuestro. Validamos el mismo a traves de JS. Y utilizamos https://bright-sunflower-5c19fb.netlify.app para subir a internet nuestra pagina.
+Proyecto realizado para el curso de FullStack del programa Codo a Codo. Creamos una pagina web llamada Cat Caffee. Utilizamos la appi https://formspree.io/ para el envio del forms donde llega a un mail nuestro los datos ingresados por el usuario. Validamos el mismo a traves de JS. Y utilizamos https://bright-sunflower-5c19fb.netlify.app para subir a internet nuestra pagina.
 
 ## Integrantes y tareas
 
@@ -12,6 +12,8 @@ Nuestra pagina web fue pensada y armada en figma. Elegimos la idea de la pagina 
 
 ![Captura de pantalla (161)](https://user-images.githubusercontent.com/98909184/197023760-1376e89d-bb8d-48a3-9b2e-072946f490f6.png)
 
+
+Cat Caffee es una página landing page con header, main y footer, sus elementos son responsivos tanto para desktop (1000px) como para mobile (400px-600px). La web cuenta con una animación de texto (google fonts) y un form de asociacion en el footer .
 
 
 
