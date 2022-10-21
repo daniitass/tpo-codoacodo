@@ -1,5 +1,5 @@
 # Tpo-codoacodo
-Proyecto realizado para el curso de FullStack del programa Codo a Codo. Creamos una pagina web llamada Cat Caffee. Utilizamos la appi https://formspree.io/ para el envio del forms donde llega a un mail nuestro los datos ingresados por el usuario. Validamos el mismo a traves de JS.
+Proyecto realizado para el curso de FullStack del programa Codo a Codo. Creamos una pagina web llamada Cat Coffee. Utilizamos la appi https://formspree.io/ para el envio del forms donde llega a un mail nuestro los datos ingresados por el usuario. Validamos el mismo a traves de JS.
 
 ### Utilizamos https://bright-sunflower-5c19fb.netlify.app para subir a internet nuestra pagina.
 
