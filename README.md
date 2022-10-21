@@ -9,6 +9,8 @@ Proyecto realizado para el curso de FullStack del programa Codo a Codo. Creamos 
 
 -Sofia Milagros Dorbessan: Nav, Manu ,Footer.
 
+-en conjunto se vieron las partes claves como validacion , uso de api , los cortes responsivos y hosting. 
+
 ## Descripcion del proyecto
 
 Nuestra pagina web fue pensada y armada en figma. Elegimos la idea de la pagina , armamos el boceto y creamos una paleta de colores para la web.
