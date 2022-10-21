@@ -10,6 +10,8 @@ Proyecto realizado para el curso de FullStack del programa Codo a Codo. Creamos 
 -Sofia Milagros Dorbessan: Nav, Manu ,Footer.
 
 -en conjunto se vieron las partes claves como validacion , uso de api , los cortes responsivos y hosting. 
+# Contacto 
+d.tassarabotello@gmail.com
 
 ## Descripcion del proyecto
 
