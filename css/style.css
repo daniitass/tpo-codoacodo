@@ -664,7 +664,7 @@ footer {
 }
 
 /*medida extra small para celular*/
-@media ( min-width:400px ) and (max-width:599px){
+@media (max-width:599px){
     body{ 
         font-size: 10px;
     }
