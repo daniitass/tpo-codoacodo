@@ -35,9 +35,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contacto">Contacto</a>
               </li>   
-
             </ul>
-
           </div>
         </div>
     </nav>
@@ -73,7 +71,6 @@
                         Miedo:
                         <input type="range" name="miedo" value="50" min="0" max="100" step="5">
                     </label>
-
                         <label for="selectMonstruos">
                             <img src="../img/monstruo (2).png" alt="Icono de miedo" class="iconoMiedo"> 
                             Tipo:
@@ -85,9 +82,26 @@
                     <input type="hidden" name="txtId">
                 </form>
             </section>
-        </section>
+        </section>        
+
+        <section id="filtroMonstruos">
+          <h2>Filtrar por Tipo</h2>       
+          <select id="selectFiltroTipo">
+          <option value="Todos">Todos</option>
+          <option value="Vampiro">Vampiro</option>
+          <option value="Hombre Lobo">Hombre Lobo</option>
+          <option value="Fantasma">Fantasma</option>
+          <option value="Esqueleto">Esqueleto</option>
+          <option value="Bruja">Bruja</option>
+          <option value="Zombie">Zombie</option>
+          </select>
+          <button id="btnFiltrar">Filtrar</button>
+      </section>
+
+      <label for="promedioMiedo" class="promedioMiedoLabel">Promedio Miedo:</label>
+      <input type="text" id="promedioMiedo" readonly>
         
-        <section id="tablaPrueba"></section>    
+      <section id="tablaPrueba"></section>    
      
     <div id="loader" style="display: none;">
         <img src="../img/waiting-3.gif" alt="Cargando...">
@@ -101,9 +115,7 @@
                 <img src="img/calabaza.png" alt="Logo">
                 HALLOWEEN
             </a>
-
             <p class>Laboratorio III - 2023</p>
-
             <div>
 
                 <a href="https://www.instagram.com/" target="_blank">

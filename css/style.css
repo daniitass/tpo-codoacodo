@@ -209,13 +209,53 @@ header{
         font-size: 15px;
         
     }
+    #filtroMonstruos,
+    #promedioMiedoLabel,
+    #promedioMiedo {
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+    }
+
+    #filtroMonstruos {
+        color: green;
+        margin-left: 50px;       
+    }     
+    
+    #selectFiltroTipo {
+        width: 200px; 
+        margin-left: 20px;
+    }
+
+    #btnFiltrar {
+        display: block; 
+        background-color: #63046d;
+        color: black;
+        transition: 0.3s;
+        padding: 10px;
+        font-weight: 700;
+        color: #49c935;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #promedioMiedo{
+        width: 200px; 
+        margin-left: 30px;
+    }
+
+    .promedioMiedoLabel{
+        color: green;
+        font-weight: 30px;
+    }
 
     /* Estilos para la tabla */
 
     table {    
     width: 70%;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 20px;
     margin-bottom: 100px;
     color: green;
 }

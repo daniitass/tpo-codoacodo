@@ -10,7 +10,7 @@ document.getElementById("eliminar").addEventListener("click", ()=>{
     handlerDelete(1700587295315);
 });
 
-// Función para obtener la lista de monstruos desde JSON Server
+//  obtener la lista de monstruos desde JSON Server
 async function obtenerListaMonstruos() {
     try {
         const response = await fetch(URL);
@@ -33,8 +33,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     await obtenerListaMonstruos();
     // Crear la tabla con los datos obtenidos
     actualizarTabla($seccionTabla, listaMonstruos);
+    calcularPromedioMiedo();    
+    
 });
-
 
 $seccionTabla.addEventListener("click", (event) => {
     if (event.target.matches("td")) {
@@ -56,6 +57,27 @@ $seccionTabla.addEventListener("click", (event) => {
         document.getElementById("eliminar").style.display = "none";
     }
 });
+//Filtro por tipo
+document.getElementById("btnFiltrar").addEventListener("click", () => {
+    const tipoSeleccionado = document.getElementById("selectFiltroTipo").value;
+    
+    if (tipoSeleccionado === "Todos") {
+        actualizarTabla($seccionTabla, listaMonstruos);
+    } else {
+        const monstruosFiltrados = listaMonstruos.filter((mons) => mons.tipo === tipoSeleccionado);
+        actualizarTabla($seccionTabla, monstruosFiltrados);
+    }
+    calcularPromedioMiedo();
+});
+
+//promedio
+function calcularPromedioMiedo() {
+    const totalMiedo = listaMonstruos.reduce((sum, mons) => sum + mons.miedo, 0);
+    const promedioMiedo = totalMiedo / listaMonstruos.length;
+
+    // Mostrar el promedio en el input de solo lectura
+    document.getElementById("promedioMiedo").value = promedioMiedo.toFixed(2); // Ajusta el número de decimales según tus preferencias
+}
 
 $formulario.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -89,6 +111,7 @@ $formulario.addEventListener("submit", async (e) => {
    
     const updatedListaMonstruos = await obtenerListaMonstruos();
     actualizarTabla($seccionTabla, updatedListaMonstruos);
+    calcularPromedioMiedo();
 });
 // -----------------fetch---------------------------
 // async function handlerCreate(nuevoMonstruo) {
@@ -260,22 +283,39 @@ async function handlerUpdate(editMonstruo) {
     }
 }
 
-async function handlerDelete(id) {
+// async function handlerDelete(id) {
    
+//     mostrarCarga();
+
+//     try {       
+//         const response = await ajaxRequest('DELETE', `${URL}/${id}`);        
+//         const updatedData = await obtenerListaMonstruos();
+
+//         setTimeout(() => {
+           
+//             actualizarTabla($seccionTabla, updatedData);          
+//             ocultarCarga();
+//         }, 2000);
+//     } catch (error) {
+//         console.error(`Error ${error.status}: ${error.statusText}`);
+       
+//         ocultarCarga();
+//     }
+// }
+
+async function handlerDelete(id) {
     mostrarCarga();
 
-    try {       
-        const response = await ajaxRequest('DELETE', `${URL}/${id}`);        
+    try {
+        const response = await axios.delete(`${URL}/${id}`);
         const updatedData = await obtenerListaMonstruos();
 
         setTimeout(() => {
-           
-            actualizarTabla($seccionTabla, updatedData);          
+            actualizarTabla($seccionTabla, updatedData);
             ocultarCarga();
         }, 2000);
     } catch (error) {
-        console.error(`Error ${error.status}: ${error.statusText}`);
-       
+        console.error(`Error ${error.response.status}: ${error.response.statusText}`);
         ocultarCarga();
     }
 }

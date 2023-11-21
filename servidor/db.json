@@ -26,11 +26,11 @@
     },
     {
       "id": 4,
-      "nombre": "Teresa",
+      "nombre": "muggy",
       "alias": "Gerant",
-      "defensa": "Plata",
-      "miedo": 30,
-      "tipo": "Hombre lobo"
+      "defensa": "Posion",
+      "miedo": 60,
+      "tipo": "Esqueleto"
     },
     {
       "id": 5,
@@ -77,7 +77,7 @@
       "nombre": "Aggy",
       "alias": "hh",
       "defensa": "Estaca",
-      "miedo": 15,
+      "miedo": 70,
       "tipo": "Zombie"
     }
   ]

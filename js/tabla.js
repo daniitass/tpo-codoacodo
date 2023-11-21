@@ -1,5 +1,3 @@
-
-
 export const crearTabla = (data) =>{
 
     if(!Array.isArray(data)) return null;
@@ -57,3 +55,4 @@ export const actualizarTabla = (contenedor,data)=>{
     contenedor.appendChild(crearTabla(data)); //creo nuevamente la tabla actualizada
 
 }
+
